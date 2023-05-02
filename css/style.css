@@ -9,10 +9,12 @@
 body{
   font-family: sans-serif;
   color: #fff;
+  background-color: #000;
+
 }
 
 .container{
-  width: 1200px;
+  width: 1800px;
   margin: 0 auto;
 }
 
@@ -22,7 +24,6 @@ a{
 
 /*! Header */
 header{
-  background-color: #000;
   height: 50px;
   text-align: right;
   padding-top: 10px;
@@ -41,12 +42,27 @@ header{
 
 /*! Main */
 main{
-  background-color: #000;
   height: calc(100vh - 150px);
   color: white;
   overflow: auto;
+  
+  padding: 20px 0;
 }
 
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 5px;
+  justify-content: center;
+}
+
+.card-image{
+  background-color: red;
+  height: 150px;
+  flex-basis: calc(100% / 9);
+
+  border: 1px dashed white;
+}
 /*! Footer */
 footer{
   background-color: #222222;
