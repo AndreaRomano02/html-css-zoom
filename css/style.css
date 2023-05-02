@@ -90,10 +90,22 @@ main{
 
 /*! Footer */
 footer{
-  display: flex;
+  display: flex;  
+  align-items: center;
+
   background-color: #222222;
   height: 100px;
-  padding: 10px 5px;
+}
+
+.foot-arrow{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.control a div:first-of-type{
+  font-size: 12px;
 }
 
 /* * Left control */
@@ -101,26 +113,50 @@ footer{
   display: flex;
   align-items: center;
   height: 100%;
+  flex-basis: calc(100% / 3);
 }
 
-.foot-control .fa-2xl{
+footer .fa-2xl{
   line-height: normal;
 }
 
-.control div:first-of-type{
-  padding-top: 10px;
-}
 
 .control{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   text-align: center;
   padding: 10px;
 }
 
-.foot-arrow{
-  font-size: 16px;
-  font-weight: bold;
-  margin-left: 10px;
 
+/* * Middle Control  */
+.foot-command{
+  height: 100%;
+  flex-basis: calc(100% / 3);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;  
+}
+
+/** End Foot */
+.foot-end{
+  display: flex;
+  height: 100%;
+  flex-basis: calc(100% / 3);
+  color: red;
+  align-items: center;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.foot-end div{
+  background-color: #4A4A4A;
+  height: 100%;
+  line-height: 100px;
+  padding: 0 20px;
+}
+
+/*! Utilities */
+.p-top-10{
+  padding-top: 10px;
 }
