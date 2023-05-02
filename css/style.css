@@ -14,3 +14,23 @@ body{
   width: 1200px;
   margin: 0 auto;
 }
+
+/*! Header */
+header{
+  background-color: #000;
+  height: 50px;
+  border: 2px dashed white;
+}
+
+/*! Main */
+main{
+  background-color: #000;
+  height: calc(100vh - 150px);
+  color: white;
+  overflow: auto;
+}
+
+footer{
+  background-color: #222222;
+  height: 100px;
+}
