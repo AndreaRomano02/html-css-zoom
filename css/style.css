@@ -87,8 +87,40 @@ main{
 .card:hover .card-hover a{
   display: inline-block;
 }
+
 /*! Footer */
 footer{
+  display: flex;
   background-color: #222222;
   height: 100px;
+  padding: 10px 5px;
+}
+
+/* * Left control */
+.foot-control{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.foot-control .fa-2xl{
+  line-height: normal;
+}
+
+.control div:first-of-type{
+  padding-top: 10px;
+}
+
+.control{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.foot-arrow{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+
 }
