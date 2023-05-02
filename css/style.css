@@ -8,6 +8,7 @@
 /* General */
 body{
   font-family: sans-serif;
+  color: #fff;
 }
 
 .container{
@@ -15,11 +16,27 @@ body{
   margin: 0 auto;
 }
 
+a{
+  text-decoration: none;
+}
+
 /*! Header */
 header{
   background-color: #000;
   height: 50px;
-  border: 2px dashed white;
+  text-align: right;
+  padding-top: 10px;
+
+  border: 1px dashed white;
+}
+
+.header-content a{
+  background-color: #4A4A4A;
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
 }
 
 /*! Main */
@@ -30,6 +47,7 @@ main{
   overflow: auto;
 }
 
+/*! Footer */
 footer{
   background-color: #222222;
   height: 100px;
